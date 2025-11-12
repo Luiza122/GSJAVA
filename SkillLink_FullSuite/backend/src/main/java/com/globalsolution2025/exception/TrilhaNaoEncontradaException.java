@@ -1,0 +1,1 @@
+package com.globalsolution2025.exception; public class TrilhaNaoEncontradaException extends RuntimeException { public TrilhaNaoEncontradaException(String m){ super(m);} }

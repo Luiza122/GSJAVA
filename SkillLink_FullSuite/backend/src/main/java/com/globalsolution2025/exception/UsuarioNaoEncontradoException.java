@@ -1,0 +1,1 @@
+package com.globalsolution2025.exception; public class UsuarioNaoEncontradoException extends RuntimeException { public UsuarioNaoEncontradoException(String m){ super(m);} }
