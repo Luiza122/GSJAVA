@@ -65,7 +65,7 @@ Exemplos de inserts iniciais estão no arquivo SQL fornecido.
 
 1. Clone o repositório:
 ```
-git clone <url-do-repositorio>
+git clone <(https://github.com/Luiza122/GSJAVA.git)>
 ```
 
 2. Abra no IntelliJ ou VS Code com plugin Java.
