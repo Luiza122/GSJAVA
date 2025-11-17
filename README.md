@@ -1,4 +1,3 @@
-
 # Skill Link - Sistema de Gestão de Trilhas, Competências e Matrículas
 
 ---
@@ -35,8 +34,7 @@ Não foram usados DTOs, conforme instrução obrigatória do professor.
 
 ## 3. Tecnologias Utilizadas
 
-- Java 17
- - Java 21
+- Java 21
 - Spring Boot 3
 - Spring Web
 - Spring Data JPA
@@ -64,34 +62,26 @@ Exemplos de inserts iniciais estão no arquivo SQL fornecido.
 
 ## 5. Como Rodar o Projeto
 
-- **Pré-requisitos:**
-- `Java JDK 21` instalado e `JAVA_HOME` configurado (obrigatório para usar o Maven).
-- `Maven` (normalmente o wrapper `mvnw` já resolve se preferir).
+**O que você precisa:**
+- Java JDK 21
+- Maven
 
-**Clonar e rodar (rápido):**
-1. Clone o repositório:
-```
+**Passos:**
+```bash
 git clone https://github.com/Luiza122/GSJAVA.git
 cd GSJAVA/skill-link
-```
-2. Rodar com o wrapper ou seu Maven local:
-```
-./mvnw spring-boot:run    # ou
 mvn spring-boot:run
 ```
-3. O servidor inicia em:
-```
-http://localhost:8080
-```
 
-**Build e testes:**
-```
+Pronto! A aplicação roda em `http://localhost:8080`
+
+**Compilar e testar:**
+```bash
 mvn clean package
 mvn test
 ```
 
-**Observações:**
-- Se houver erro "No compiler is provided" instale/configure o JDK e reinicie o terminal (veja Troubleshooting abaixo).
+> Se der erro de compilador, é porque o JDK não está configurado. Ver seção de Troubleshooting.
 
 ---
 
@@ -154,113 +144,51 @@ mvn test
 }
 ```
 
-## 8. Exemplos rápidos (cURL)
+## 8. Exemplos com cURL
 
-- **Listar usuários**
-```
-curl -X GET "http://localhost:8080/api/usuarios" -H "Accept: application/json"
-```
-
-- **Buscar usuário por id**
-```
-curl -X GET "http://localhost:8080/api/usuarios/1" -H "Accept: application/json"
+**Listar usuários**
+```bash
+curl http://localhost:8080/api/usuarios
 ```
 
-- **Criar usuário** (exemplo JSON — ajuste campos conforme sua entidade `Usuario`):
+**Buscar usuário**
+```bash
+curl http://localhost:8080/api/usuarios/1
 ```
-curl -X POST "http://localhost:8080/api/usuarios" \
+
+**Criar usuário**
+```bash
+curl -X POST http://localhost:8080/api/usuarios \
   -H "Content-Type: application/json" \
-  -d '{"nome":"João Silva","email":"joao@example.com","senha":"senha123"}'
+  -d '{"nome":"João","email":"joao@example.com","senha":"123"}'
 ```
 
-- **Listar trilhas**
-```
-curl -X GET "http://localhost:8080/api/trilhas"
-```
-
-- **Criar trilha**
-```
-curl -X POST "http://localhost:8080/api/trilhas" \
-  -H "Content-Type: application/json" \
-  -d '{"nome":"Trilha Backend Java","descricao":"...","nivel":"INTERMEDIARIO","cargaHoraria":40,"focoPrincipal":"Java","competencias":[{"id":1}]}'
+**Listar trilhas, competências ou matrículas**
+```bash
+curl http://localhost:8080/api/trilhas
+curl http://localhost:8080/api/competencias
+curl http://localhost:8080/api/matriculas
 ```
 
-- **Listar competências**
-```
-curl -X GET "http://localhost:8080/api/competencias"
-```
+## 9. Banco de Dados
 
-- **Listar matrículas**
-```
-curl -X GET "http://localhost:8080/api/matriculas"
-```
+Os scripts de inicialização estão em:
+- `src/main/resources/db/schema.sql` (tabelas)
+- `src/main/resources/db/data.sql` (dados de exemplo)
 
-## 9. Banco de Dados e scripts de inicialização
-- Os scripts de schema e dados iniciais estão em `src/main/resources/db/schema.sql` e `src/main/resources/db/data.sql`.
-- Por padrão o projeto pode usar H2 em memória ou MySQL dependendo da configuração em `src/main/resources/application.properties`.
-- Para usar MySQL, ajuste as propriedades de conexão (`spring.datasource.*`) e remova/ajuste a configuração de inicialização automática, se necessário.
+Por padrão usa H2 (em memória), mas pode configurar MySQL em `application.properties`.
 
-## 10. Testes unitários
-- Rodar todos os testes:
-```
+## 10. Testes
+
+```bash
 mvn test
 ```
-- Os testes usam JUnit 5 e Mockito, com mocks dos repositórios. Arquivos de teste estão em `src/test/java`.
 
-## 11. Troubleshooting (problemas comuns)
-- Erro: `No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?`
-  - Solução rápida (PowerShell, temporário):
-  ```powershell
-  Set-Item -Path Env:JAVA_HOME -Value 'C:\Program Files\Java\jdk-21'
-  $env:PATH = $env:JAVA_HOME + '\bin;' + $env:PATH
-  mvn -v
-  ```
-  - Para persistir, configure `JAVA_HOME` nas Variáveis de Ambiente do Windows (Painel de Controle → Sistema → Configurações avançadas → Variáveis de ambiente).
+Os testes usam JUnit 5 e Mockito, testam listagem, busca, criação, atualização e deleção.
 
-- Erro 404 nos endpoints: verifique se a aplicação realmente iniciou em `http://localhost:8080` e se o prefixo `/api` está sendo aplicado pelos controllers (ex.: `@RequestMapping("/api/usuarios")`).
+## 12. Integrantes
 
-## 12. Contribuição
-- Sinta-se livre para abrir issues ou pull requests. Mantenha commits pequenos e com mensagens claras.
-
-## 13. Contato
-- Autor/Manutenção: `Luiza122` (repositório GitHub)
-
-## Integrantes
 - **Fernanda Rocha Menon** - RM554673
 - **Giulia Rocha Barbizan Alves** - RM558084
 - **Luiza Macena Dantas** - RM556237
 
-
----
-
-## 8. Testes Unitários
-
-Os testes foram implementados com:
-- JUnit 5
-- Mockito
-- Mock dos repositórios
-- Testes de:
-  - listagem
-  - busca com exceção
-  - criação
-  - atualização
-  - deleção
-
-Estão localizados na pasta indicada pelo professor:  
-```
-/src/test/java/testes
-```
-
----
-
-## 9. Tratamento de Erros
-
-O sistema possui:
-
-- `NaoEncontradoException`
-- `GlobalExceptionHandler`
-
-Erros retornam mensagens claras para o cliente, como:
-```
-Usuário de id - 5 não encontrado
-```
