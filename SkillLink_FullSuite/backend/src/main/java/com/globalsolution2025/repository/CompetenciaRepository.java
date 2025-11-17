@@ -1,1 +1,0 @@
-package com.globalsolution2025.repository; import org.springframework.data.jpa.repository.JpaRepository; import com.globalsolution2025.model.Competencia; public interface CompetenciaRepository extends JpaRepository<Competencia, Long> {}

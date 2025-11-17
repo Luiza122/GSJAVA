@@ -1,1 +1,0 @@
-Documento de conceito consolidado (SkillLink) — inclua no seu relatório final.

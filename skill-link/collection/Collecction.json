@@ -1,0 +1,1267 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v12.0.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 16.602999999999998,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:8080/api/matriculas/21",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 21:06:55 GMT"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 16.602999999999998,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Deletar Matrícula"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 16.048,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:8080/api/matriculas/21",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"usuario\": { \"id\": 2 },\n  \"trilha\": { \"id\": 2 },\n  \"dataInscricao\": \"2025-10-16\",\n  \"status\": \"ATIVA\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 21:06:18 GMT"
+						}
+					],
+					"content": {
+						"size": 257,
+						"mimeType": "application/json",
+						"text": "{\"id\":21,\"usuario\":{\"id\":2,\"nome\":null,\"email\":null,\"areaAtuacao\":null,\"nivelCarreira\":null,\"dataCadastro\":null},\"trilha\":{\"id\":2,\"nome\":null,\"descricao\":null,\"nivel\":null,\"cargaHoraria\":0,\"focoPrincipal\":null},\"dataInscricao\":\"2025-10-16\",\"status\":\"ATIVA\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 16.048,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Atualizar Matrícula"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 10.684000000000001,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/matriculas/21",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 21:06:23 GMT"
+						}
+					],
+					"content": {
+						"size": 381,
+						"mimeType": "application/json",
+						"text": "{\"id\":21,\"usuario\":{\"id\":2,\"nome\":\"Bruno Silva\",\"email\":\"bruno.silva@example.com\",\"areaAtuacao\":\"Marketing\",\"nivelCarreira\":\"Pleno\",\"dataCadastro\":\"2025-11-16\"},\"trilha\":{\"id\":2,\"nome\":\"Trilha de Soft Skills\",\"descricao\":\"Comunicação e trabalho em equipe\",\"nivel\":\"INICIANTE\",\"cargaHoraria\":20,\"focoPrincipal\":\"Habilidades Humanas\"},\"dataInscricao\":\"2025-10-16\",\"status\":\"ATIVA\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 10.684000000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Matrícula"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 24.977,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/matriculas",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"usuario\": { \"id\": 1 },\n  \"trilha\": { \"id\": 2 },\n  \"dataInscricao\": \"2025-10-16\",\n  \"status\": \"ATIVA\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Location",
+							"value": "/api/matriculas/21"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 21:04:29 GMT"
+						}
+					],
+					"content": {
+						"size": 257,
+						"mimeType": "application/json",
+						"text": "{\"id\":21,\"usuario\":{\"id\":1,\"nome\":null,\"email\":null,\"areaAtuacao\":null,\"nivelCarreira\":null,\"dataCadastro\":null},\"trilha\":{\"id\":2,\"nome\":null,\"descricao\":null,\"nivel\":null,\"cargaHoraria\":0,\"focoPrincipal\":null},\"dataInscricao\":\"2025-10-16\",\"status\":\"ATIVA\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 24.977,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar Matrícula"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 15.365,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/matriculas",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 21:06:27 GMT"
+						}
+					],
+					"content": {
+						"size": 1132,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"usuario\":{\"id\":1,\"nome\":\"Alice Souza\",\"email\":\"alice.souza@example.com\",\"areaAtuacao\":\"Tecnologia\",\"nivelCarreira\":\"Junior\",\"dataCadastro\":\"2025-11-16\"},\"trilha\":{\"id\":1,\"nome\":\"Trilha de Dados\",\"descricao\":\"Fundamentos de dados e estatística\",\"nivel\":\"INICIANTE\",\"cargaHoraria\":40,\"focoPrincipal\":\"Analytics\"},\"dataInscricao\":\"2025-11-16\",\"status\":\"ATIVA\"},{\"id\":2,\"usuario\":{\"id\":2,\"nome\":\"Bruno Silva\",\"email\":\"bruno.silva@example.com\",\"areaAtuacao\":\"Marketing\",\"nivelCarreira\":\"Pleno\",\"dataCadastro\":\"2025-11-16\"},\"trilha\":{\"id\":2,\"nome\":\"Trilha de Soft Skills\",\"descricao\":\"Comunicação e trabalho em equipe\",\"nivel\":\"INICIANTE\",\"cargaHoraria\":20,\"focoPrincipal\":\"Habilidades Humanas\"},\"dataInscricao\":\"2025-11-16\",\"status\":\"ATIVA\"},{\"id\":21,\"usuario\":{\"id\":2,\"nome\":\"Bruno Silva\",\"email\":\"bruno.silva@example.com\",\"areaAtuacao\":\"Marketing\",\"nivelCarreira\":\"Pleno\",\"dataCadastro\":\"2025-11-16\"},\"trilha\":{\"id\":2,\"nome\":\"Trilha de Soft Skills\",\"descricao\":\"Comunicação e trabalho em equipe\",\"nivel\":\"INICIANTE\",\"cargaHoraria\":20,\"focoPrincipal\":\"Habilidades Humanas\"},\"dataInscricao\":\"2025-10-16\",\"status\":\"ATIVA\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 15.365,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Matrículas"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 14.748000000000001,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:8080/api/competencias/6",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:56:24 GMT"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 14.748000000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Deletar Competência"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 16.045,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:8080/api/competencias/6",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"nome\": \"Database Design\",\n\t\"categoria\": \"Tecnologia\",\n\t\"descricao\": \"Fundamentos de Banco de Dados e Introdução a SQL e Oracle\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:55:54 GMT"
+						}
+					],
+					"content": {
+						"size": 132,
+						"mimeType": "application/json",
+						"text": "{\"id\":6,\"nome\":\"Database Design\",\"categoria\":\"Tecnologia\",\"descricao\":\"Fundamentos de Banco de Dados e Introdução a SQL e Oracle\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 16.045,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Atualizar Competência"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 13.485999999999999,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/competencias/6",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:54:41 GMT"
+						}
+					],
+					"content": {
+						"size": 123,
+						"mimeType": "application/json",
+						"text": "{\"id\":6,\"nome\":\"Database Design\",\"categoria\":\"Tecnologia\",\"descricao\":\"Fundamentos de Banco de Dados e Introdução a SQL\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 13.485999999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Competência"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 13.706,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/competencias",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"nome\": \"Database Design\",\n\t\"categoria\": \"Tecnologia\",\n\t\"descricao\": \"Fundamentos de Banco de Dados e Introdução a SQL\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Location",
+							"value": "/api/competencias/6"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:53:54 GMT"
+						}
+					],
+					"content": {
+						"size": 123,
+						"mimeType": "application/json",
+						"text": "{\"id\":6,\"nome\":\"Database Design\",\"categoria\":\"Tecnologia\",\"descricao\":\"Fundamentos de Banco de Dados e Introdução a SQL\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 13.706,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar Competência"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 11.204,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/competencias",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:53:58 GMT"
+						}
+					],
+					"content": {
+						"size": 652,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"nome\":\"Inteligência Artificial\",\"categoria\":\"Tecnologia\",\"descricao\":\"Fundamentos de IA e ML\"},{\"id\":2,\"nome\":\"Análise de Dados\",\"categoria\":\"Tecnologia\",\"descricao\":\"Estatística aplicada e analytics\"},{\"id\":3,\"nome\":\"Empatia\",\"categoria\":\"Comportamental\",\"descricao\":\"Habilidade socioemocional\"},{\"id\":4,\"nome\":\"Colaboração\",\"categoria\":\"Comportamental\",\"descricao\":\"Trabalho em equipe\"},{\"id\":5,\"nome\":\"Database Design\",\"categoria\":\"Tecnologia\",\"descricao\":\"Fundamentos de Banco de Dados e Introdução a SQL\"},{\"id\":6,\"nome\":\"Database Design\",\"categoria\":\"Tecnologia\",\"descricao\":\"Fundamentos de Banco de Dados e Introdução a SQL\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 11.204,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Competências"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 25.725,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:8080/api/trilhas/4",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:50:23 GMT"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 25.725,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Deletar Trilha"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 54.617,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:8080/api/trilhas/4",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"nome\": \"Trilha de Backend Java\",\n\t\"descricao\": \"Formação completa em desenvolvimento backend com Java, Spring e boas práticas.\",\n\t\"nivel\": \"INTERMEDIARIO\",\n\t\"cargaHoraria\": 120,\n\t\"focoPrincipal\": \"Java e Spring Framework\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:49:53 GMT"
+						}
+					],
+					"content": {
+						"size": 221,
+						"mimeType": "application/json",
+						"text": "{\"id\":4,\"nome\":\"Trilha de Backend Java\",\"descricao\":\"Formação completa em desenvolvimento backend com Java, Spring e boas práticas.\",\"nivel\":\"INTERMEDIARIO\",\"cargaHoraria\":120,\"focoPrincipal\":\"Java e Spring Framework\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 54.617,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Atualizar Trilha"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 30.89,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/trilhas/4",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:47:52 GMT"
+						}
+					],
+					"content": {
+						"size": 216,
+						"mimeType": "application/json",
+						"text": "{\"id\":4,\"nome\":\"Trilha de Backend Java\",\"descricao\":\"Formação completa em desenvolvimento backend com Java, Spring e boas práticas.\",\"nivel\":\"AVANCADO\",\"cargaHoraria\":120,\"focoPrincipal\":\"Java e Spring Framework\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 30.89,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Trilha"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 14.139000000000001,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/trilhas",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"nome\": \"Trilha de Backend Java\",\n  \"descricao\": \"Formação completa em desenvolvimento backend com Java, Spring e boas práticas.\",\n  \"nivel\": \"AVANCADO\",\n  \"cargaHoraria\": 120,\n  \"focoPrincipal\": \"Java e Spring Framework\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Location",
+							"value": "/api/trilhas/4"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:47:15 GMT"
+						}
+					],
+					"content": {
+						"size": 216,
+						"mimeType": "application/json",
+						"text": "{\"id\":4,\"nome\":\"Trilha de Backend Java\",\"descricao\":\"Formação completa em desenvolvimento backend com Java, Spring e boas práticas.\",\"nivel\":\"AVANCADO\",\"cargaHoraria\":120,\"focoPrincipal\":\"Java e Spring Framework\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 14.139000000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar Trilha"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 13.026,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/trilhas",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:51:13 GMT"
+						}
+					],
+					"content": {
+						"size": 533,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"nome\":\"Trilha de Dados\",\"descricao\":\"Fundamentos de dados e estatística\",\"nivel\":\"INICIANTE\",\"cargaHoraria\":40,\"focoPrincipal\":\"Analytics\"},{\"id\":2,\"nome\":\"Trilha de Soft Skills\",\"descricao\":\"Comunicação e trabalho em equipe\",\"nivel\":\"INICIANTE\",\"cargaHoraria\":20,\"focoPrincipal\":\"Habilidades Humanas\"},{\"id\":3,\"nome\":\"Trilha de Backend Java\",\"descricao\":\"Formação completa em desenvolvimento backend com Java, Spring e boas práticas.\",\"nivel\":\"AVANCADO\",\"cargaHoraria\":120,\"focoPrincipal\":\"Java e Spring Framework\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 13.026,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Trilhas"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 29.761,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:8080/api/usuarios/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 204,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:05:42 GMT"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 29.761,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Deletar Usuário"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 38.691,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:8080/api/usuarios/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"nome\": \"Luiza Macena\",\n\t\"email\": \"luiza.macena@example.com\",\n\t\"areaAtuacao\": \"Tecnologia\",\n\t\"nivelCarreira\": \"Junior\",\n\t\"dataCadastro\": \"2025-10-30\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:04:52 GMT"
+						}
+					],
+					"content": {
+						"size": 145,
+						"mimeType": "application/json",
+						"text": "{\"id\":3,\"nome\":\"Luiza Macena\",\"email\":\"luiza.macena@example.com\",\"areaAtuacao\":\"Tecnologia\",\"nivelCarreira\":\"Junior\",\"dataCadastro\":\"2025-10-30\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 38.691,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Atualizar Usuário"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 12.413,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/usuarios/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:05:35 GMT"
+						}
+					],
+					"content": {
+						"size": 145,
+						"mimeType": "application/json",
+						"text": "{\"id\":3,\"nome\":\"Luiza Macena\",\"email\":\"luiza.macena@example.com\",\"areaAtuacao\":\"Tecnologia\",\"nivelCarreira\":\"Junior\",\"dataCadastro\":\"2025-10-30\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 12.413,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Usuário"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 65.04,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/usuarios",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"nome\": \"Luiza Macena\",\n\t\"email\": \"luiza.macena@example.com\",\n\t\"areaAtuacao\": \"TI\",\n\t\"nivelCarreira\": \"Junior\",\n\t\"dataCadastro\": \"2025-01-30\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Location",
+							"value": "/api/usuarios/3"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:03:10 GMT"
+						}
+					],
+					"content": {
+						"size": 137,
+						"mimeType": "application/json",
+						"text": "{\"id\":3,\"nome\":\"Luiza Macena\",\"email\":\"luiza.macena@example.com\",\"areaAtuacao\":\"TI\",\"nivelCarreira\":\"Junior\",\"dataCadastro\":\"2025-01-30\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 65.04,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar Usuário"
+			},
+			{
+				"startedDateTime": "2025-11-16T21:07:54.485Z",
+				"time": 17.85,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/usuarios",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.0.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 16 Nov 2025 20:05:06 GMT"
+						}
+					],
+					"content": {
+						"size": 433,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"nome\":\"Alice Souza\",\"email\":\"alice.souza@example.com\",\"areaAtuacao\":\"Tecnologia\",\"nivelCarreira\":\"Junior\",\"dataCadastro\":\"2025-11-16\"},{\"id\":2,\"nome\":\"Bruno Silva\",\"email\":\"bruno.silva@example.com\",\"areaAtuacao\":\"Marketing\",\"nivelCarreira\":\"Pleno\",\"dataCadastro\":\"2025-11-16\"},{\"id\":3,\"nome\":\"Luiza Macena\",\"email\":\"luiza.macena@example.com\",\"areaAtuacao\":\"Tecnologia\",\"nivelCarreira\":\"Junior\",\"dataCadastro\":\"2025-10-30\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 17.85,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Usuários"
+			}
+		]
+	}
+}
